@@ -1,4 +1,22 @@
-cmake_minimum_required (VERSION 2.6)
+cmake_minimum_required(VERSION 3.2.2)
+
 project (universe)
-add_executable(universe src/UniverseTest.cpp src/Exercises/Universe.h src/Exercises/Universe.cpp)
+
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
+include(FindComputeCpp)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(SYSTEM ${COMPUTECPP_INCLUDE_DIRECTORY})
+
+set(SOURCE_NAME "Universe")
+add_executable(
+  ${SOURCE_NAME}
+  ${CMAKE_CURRENT_SOURCE_DIR}/${SOURCE_NAME}.cpp
+)
+add_sycl_to_target(
+  ${SOURCE_NAME}
+  ${CMAKE_CURRENT_BINARY_DIR}
+  ${CMAKE_CURRENT_SOURCE_DIR}/${SOURCE_NAME}.cpp
+)
 
