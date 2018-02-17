@@ -3,4 +3,4 @@
 mkdir build
 cd build
 
-cmake ../ -GNinja
+cmake ../ -GNinja -D CMAKE_C_COMPILER="/usr/bin/gcc"
