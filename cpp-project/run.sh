@@ -1,3 +1,5 @@
 #!/bin/sh
 
-make && ./universe
+cd build
+
+cmake ../ -GNinja
