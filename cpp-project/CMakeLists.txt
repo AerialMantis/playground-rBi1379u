@@ -6,8 +6,6 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
 include(FindComputeCpp)
 
 set(CMAKE_CXX_STANDARD 14)
-set(OpenCL_INCLUDE_DIR /opt/opencl_lib/incude)
-set(OpenCL_LIBRARY /opt/opencl_lib/lib)
 
 include_directories(SYSTEM ${COMPUTECPP_INCLUDE_DIRECTORY})
 
