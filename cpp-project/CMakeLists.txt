@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 3.2.2)
 
 project (universe)
 
-list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
-include(FindComputeCpp)
+include(${CMAKE_SOURCE_DIR}/FindComputeCpp/cmake/Modules/FindComputeCpp.cmake)
 
 set(CMAKE_CXX_STANDARD 14)
 
