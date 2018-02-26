@@ -6,7 +6,7 @@ int main (int argc, char *argv[]) {
 
   myQueue.submit([&](cl::sycl::handler &cgh) {
 
-    cl::sycl::stream os(1024, 128);
+    cl::sycl::stream os(1024, 128, cgh);
 
     cgh.single_task<class kernel>([=]() {
        
