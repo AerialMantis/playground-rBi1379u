@@ -10,11 +10,11 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(SYSTEM ${COMPUTECPP_INCLUDE_DIRECTORY})
 
 add_executable(
-  ${SOURCE_NAME}
+  ${SAMPLE_NAME}
   ${CMAKE_CURRENT_SOURCE_DIR}/src/exercises/${SAMPLE_NAME}.cpp
 )
 add_sycl_to_target(
-  ${SOURCE_NAME}
+  ${SAMPLE_NAME}
   ${CMAKE_CURRENT_BINARY_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}/src/exercises/${SAMPLE_NAME}.cpp
 )
