@@ -5,6 +5,6 @@
 mkdir build
 cd build
 
-cmake ../ -GNinja -DCMAKE_CXX_COMPILER="/usr/bin/gcc" -DOpenCL_INCLUDE_DIR="$OCL_INC" -DOpenCL_LIBRARY="$OCL_LIB" -DCOMPUTECPP_PACKAGE_ROOT_DIR="/usr/local/computecpp"
+cmake ../ -GNinja -DCMAKE_CXX_COMPILER="/usr/bin/gcc" -DOpenCL_INCLUDE_DIR="$OCL_INC" -DOpenCL_LIBRARY="$OCL_LIB/libOpenCL.so" -DCOMPUTECPP_PACKAGE_ROOT_DIR="/usr/local/computecpp"
 
 ninja
