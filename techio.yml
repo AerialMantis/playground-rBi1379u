@@ -1,7 +1,12 @@
 title: Introduction to SYCL
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+  - title: Introduction
+    description: This chapter introduces heterogeneous computing.
+    plan:
+    - title: Introduction to SYCL
+      statement: markdowns/intro.md
+    - title: Hello world
+      statement: markdowns/hello_world.md
 projects:
   cpp:
     root: /cpp-project
