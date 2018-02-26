@@ -1,18 +1,27 @@
+#include <iostream>
 #include "CL/sycl.hpp"
 
 int main (int argc, char *argv[]) {
- 
+
   cl::sycl::queue myQueue;
 
-  myQueue.submit([&](cl::sycl::handler &cgh) {
+  try {
 
-    cl::sycl::stream os(1024, 128, cgh);
+    myQueue.submit([&](cl::sycl::handler &cgh) {
 
-    cgh.single_task<class kernel>([=]() {
+      // cl::sycl::stream os(1024, 128, cgh);
+
+      cgh.single_task<class kernel>([=]() {
        
-       os << "Hello from SYCL!";
+         // os << "Hello from SYCL!";
         
-    });
+      });
+      
+      myQueue.wait_and_throw();
  
-  });
+    });
+  
+  } catch(cl::sycl::exception e) {
+    std::cout << e.what();   
+  }
 }
