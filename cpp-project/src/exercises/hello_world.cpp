@@ -14,8 +14,5 @@ int main (int argc, char *argv[]) {
        os << "Hello World";
         
     });
-      
-    myQueue.wait_and_throw();
- 
   });
 }
