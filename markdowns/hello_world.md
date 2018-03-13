@@ -6,4 +6,4 @@ This first tutorial will guide you through the steps involved in writing your fi
 
 # Including the SYCL Runtime
 
-Everything you need to write a SYCL application is included in the `CL\SYCL.hpp` header file.
+Everything you need to write a SYCL application is included in the `CL/SYCL.hpp` header file.
