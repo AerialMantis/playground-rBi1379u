@@ -1,4 +1,4 @@
-# Sandbox
+# Summary
 
 This page is provided as a blank slate to try out writing SYCL applications.
 
