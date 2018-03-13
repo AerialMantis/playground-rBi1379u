@@ -11,7 +11,7 @@ int main (int argc, char *argv[]) {
 
     cgh.single_task<class kernel>([=]() {
        
-       os << "Hello from SYCL!";
+       os << "Hello World";
         
     });
       
