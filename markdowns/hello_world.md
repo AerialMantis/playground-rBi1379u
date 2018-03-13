@@ -4,6 +4,6 @@ This first tutorial will guide you through the steps involved in writing your fi
 
 @[Hello World from SYCL]({"stubs": ["src/exercises/hello_world.cpp"],"command": "sh /project/target/run.sh hello_world"})
 
-# Including the SYCL Runtime
+## Including the SYCL Runtime
 
 Everything you need to write a SYCL application is included in the `CL/SYCL.hpp` header file.
