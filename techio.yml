@@ -8,7 +8,7 @@ plan:
     - title: Hello world
       statement: markdowns/hello_world.md
 title: Sandbox
-      plan:
+plan:
         - title: Sanbox
           description: This page provides a blank project for sandboxing.
           plan:
