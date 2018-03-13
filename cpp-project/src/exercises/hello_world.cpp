@@ -5,23 +5,17 @@ int main (int argc, char *argv[]) {
 
   cl::sycl::queue myQueue;
 
-  try {
+  myQueue.submit([&](cl::sycl::handler &cgh) {
 
-    myQueue.submit([&](cl::sycl::handler &cgh) {
+    cl::sycl::stream os(1024, 128, cgh);
 
-      // cl::sycl::stream os(1024, 128, cgh);
-
-      cgh.single_task<class kernel>([=]() {
+    cgh.single_task<class kernel>([=]() {
        
-         // os << "Hello from SYCL!";
+       os << "Hello from SYCL!";
         
-      });
-      
-      myQueue.wait_and_throw();
- 
     });
-  
-  } catch(cl::sycl::exception e) {
-    std::cout << e.what();   
-  }
+      
+    myQueue.wait_and_throw();
+ 
+  });
 }
