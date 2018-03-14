@@ -3,15 +3,15 @@
 
 int main (int argc, char *argv[]) {
 
-  cl::sycl::queue myQueue;
+  /* construct a queue called myQueue */
 
   myQueue.submit([&](cl::sycl::handler &cgh) {
 
-    cl::sycl::stream os(1024, 128, cgh);
+    /* construct a stream object */
 
-    cgh.single_task<class kernel>([=]() {
+    cgh.single_task<class hello_world>([=]() {
        
-       os << "Hello World";
+       /* output "Hello World" to the console */
         
     });
   });
