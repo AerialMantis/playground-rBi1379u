@@ -3,7 +3,7 @@
 
 int main (int argc, char *argv[]) {
 
-  /* construct a queue called myQueue */
+  /* construct a queue object called myQueue */
 
   myQueue.submit([&](cl::sycl::handler &cgh) {
 
