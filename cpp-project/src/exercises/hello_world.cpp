@@ -1,5 +1,5 @@
 #include <iostream>
-#include "CL/sycl.hpp"
+/* include the SYCL runtime header */
 
 int main (int argc, char *argv[]) {
 
