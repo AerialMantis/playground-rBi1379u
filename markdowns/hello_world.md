@@ -38,7 +38,7 @@ From within the kernel function you can output to the `cl::sycl::stream` object 
 
 1. Stream the text `Hello World` to the console from within the kernel function. 
 
-## Cleanup
+## Cleaning Up
 
 One of the best features of SYCL is that it makes great use of C++ RAII (resource aquisition is initialisation), meaning that there is no explicit cleanup, everything is done via the SYCL object destructors. In this case the destructor of the `cl::sycl::stream` object will wait for the command group which is accessing it to complete and then ensure the buffer has been output to the console before returning.
 
