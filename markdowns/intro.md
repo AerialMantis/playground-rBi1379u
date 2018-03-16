@@ -16,6 +16,8 @@ This tutorial aims to teach you everything you need to know to write SYCL applic
 
 This tutorial will use SYCL 1.2.1 which is the latest version of the standard as of Dec 2017.
 
+This tutorial is using the latest [ComputeCpp Community Edition](https://codeplay.com/products/computesuite/computecpp); a work in progress SYCL 1.2.1 implementation being developed by Codeplay Software Ltd.
+
 **Note that this tutorial is still work in progress and currently only targets the host device, which means it is not yet running on a GPU, however it will behave in the same manner as if it were.**
 
 # System Verification
