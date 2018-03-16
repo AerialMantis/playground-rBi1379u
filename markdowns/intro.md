@@ -20,4 +20,4 @@ This tutorial will use SYCL 1.2.1 which is the latest version of the standard as
 
 # System Verification
 
-@[Verification]({"command": "sh /project/target/verify.sh"})
+@[Verification]({"command": "sh /project/target/validate.sh"})
