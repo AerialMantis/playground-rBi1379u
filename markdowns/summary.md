@@ -8,7 +8,7 @@ Now that you've finished this first tutorial, test ourself on what you have lear
 -[ ] `CL\sycl.h`
 -[x] `CL\sycl.hpp`
 
-?[Which object is used to submit tasks in SYCL]
+?[Which object is used to submit tasks in SYCL?]
 -[ ] `device`
 -[x] `queue`
 -[ ] `command group`
