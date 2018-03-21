@@ -5,6 +5,8 @@ plan:
     plan:
     - title: Introduction to SYCL
       statement: markdowns/intro.md
+    - title: Getting Started
+      statement: markdowns/configuration.md
     - title: Hello World
       statement: markdowns/hello_world.md
     - title: Summary
